@@ -18,11 +18,14 @@ spec:
 
     spec:
       containers:
+
         - name: college-placement-portal
-          image: balaji00002/college-placement-portal:v1
+
+          image: balaji00002/college-placement-portal:v2
 
           ports:
             - containerPort: 80
+
 
 ---
 

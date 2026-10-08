@@ -8,6 +8,7 @@
     <title>College Placement Portal</title>
 
     <style>
+
         body {
             font-family: Arial, sans-serif;
             margin: 0;
@@ -21,6 +22,14 @@
             padding: 25px;
         }
 
+        header h1 {
+            margin: 0 0 10px 0;
+        }
+
+        header p {
+            margin: 5px;
+        }
+
         .container {
             width: 90%;
             max-width: 1000px;
@@ -32,7 +41,11 @@
             padding: 20px;
             border-radius: 10px;
             margin-bottom: 20px;
-            box-shadow: 0 3px 10px rgba(0,0,0,0.12);
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.12);
+        }
+
+        .college-info h2 {
+            color: #1f4e79;
         }
 
         .job-card {
@@ -41,11 +54,12 @@
             margin-bottom: 20px;
             border-left: 5px solid #1f4e79;
             border-radius: 8px;
-            box-shadow: 0 3px 10px rgba(0,0,0,0.12);
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.12);
         }
 
         .job-card h2 {
             color: #1f4e79;
+            margin-top: 0;
         }
 
         .job-card p {
@@ -59,6 +73,30 @@
             padding: 10px 20px;
             text-decoration: none;
             border-radius: 5px;
+            margin-top: 10px;
+        }
+
+        .apply-btn:hover {
+            background: #163a5c;
+        }
+
+        /* New Version 2 company */
+        .new-company {
+            border-left: 5px solid #28a745;
+        }
+
+        .new-company h2 {
+            color: #28a745;
+        }
+
+        .new-badge {
+            display: inline-block;
+            background: #28a745;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 15px;
+            font-size: 12px;
+            margin-bottom: 10px;
         }
 
         .contact {
@@ -66,107 +104,187 @@
             color: white;
             padding: 20px;
             border-radius: 8px;
+            margin-bottom: 30px;
         }
+
+        .contact h2 {
+            margin-top: 0;
+        }
+
     </style>
+
 </head>
 
 <body>
 
-<header>
-    <h1>College Placement Portal</h1>
-    <p>VIT College</p>
-    <p>Department of Computer Science</p>
-</header>
+    <!-- Header -->
 
-<div class="container">
+    <header>
 
-    <div class="college-info">
-        <h2>College Information</h2>
+        <h1>College Placement Portal</h1>
 
-        <p><strong>College:</strong> VIT College</p>
-        <p><strong>Department:</strong> Computer Science</p>
-        <p><strong>Placement Cell:</strong> Training and Placement Department</p>
+        <p>VIT College</p>
+
+        <p>Department of Computer Science</p>
+
+    </header>
+
+
+    <div class="container">
+
+
+        <!-- College Information -->
+
+        <div class="college-info">
+
+            <h2>College Information</h2>
+
+            <p>
+                <strong>College:</strong>
+                VIT College
+            </p>
+
+            <p>
+                <strong>Department:</strong>
+                Computer Science
+            </p>
+
+            <p>
+                <strong>Placement Cell:</strong>
+                Training and Placement Department
+            </p>
+
+        </div>
+
+
+        <!-- Company 1 -->
+
+        <div class="job-card">
+
+            <h2>ABC Technologies</h2>
+
+            <p>
+                <strong>Job Role:</strong>
+                Software Developer
+            </p>
+
+            <p>
+                <strong>Eligibility:</strong>
+                B.Tech / B.E. Computer Science with minimum 60%
+            </p>
+
+            <p>
+                <strong>Salary:</strong>
+                ₹6 LPA
+            </p>
+
+            <p>
+                <strong>Application Deadline:</strong>
+                25 October 2026
+            </p>
+
+            <a href="#" class="apply-btn">
+                Apply Now
+            </a>
+
+        </div>
+
+
+        <!-- Company 2 -->
+
+        <div class="job-card">
+
+            <h2>XYZ Solutions</h2>
+
+            <p>
+                <strong>Job Role:</strong>
+                Graduate Engineer Trainee
+            </p>
+
+            <p>
+                <strong>Eligibility:</strong>
+                B.E / B.Tech with minimum 65%
+            </p>
+
+            <p>
+                <strong>Salary:</strong>
+                ₹5 LPA
+            </p>
+
+            <p>
+                <strong>Application Deadline:</strong>
+                30 October 2026
+            </p>
+
+            <a href="#" class="apply-btn">
+                Apply Now
+            </a>
+
+        </div>
+
+
+        <!-- NEW COMPANY ADDED IN VERSION 2 -->
+
+        <div class="job-card new-company">
+
+            <span class="new-badge">
+                NEW OPPORTUNITY
+            </span>
+
+            <h2>TechNova Solutions</h2>
+
+            <p>
+                <strong>Job Role:</strong>
+                Full Stack Developer
+            </p>
+
+            <p>
+                <strong>Eligibility:</strong>
+                B.E / B.Tech in Computer Science with minimum 60%
+            </p>
+
+            <p>
+                <strong>Salary:</strong>
+                ₹7 LPA
+            </p>
+
+            <p>
+                <strong>Application Deadline:</strong>
+                5 November 2026
+            </p>
+
+            <a href="#" class="apply-btn">
+                Apply Now
+            </a>
+
+        </div>
+
+
+        <!-- Placement Contact -->
+
+        <div class="contact">
+
+            <h2>Placement Contact Information</h2>
+
+            <p>
+                <strong>Email:</strong>
+                placement@vit.ac.in
+            </p>
+
+            <p>
+                <strong>Phone:</strong>
+                +91 XXXXX XXXXX
+            </p>
+
+            <p>
+                <strong>Placement Office:</strong>
+                Training and Placement Department
+            </p>
+
+        </div>
+
+
     </div>
-
-    <div class="job-card">
-
-        <h2>ABC Technologies</h2>
-
-        <p>
-            <strong>Job Role:</strong>
-            Software Developer
-        </p>
-
-        <p>
-            <strong>Eligibility:</strong>
-            B.Tech / B.E. Computer Science with minimum 60%
-        </p>
-
-        <p>
-            <strong>Salary:</strong>
-            ₹6 LPA
-        </p>
-
-        <p>
-            <strong>Application Deadline:</strong>
-            25 October 2026
-        </p>
-
-        <a href="#" class="apply-btn">
-            Apply Now
-        </a>
-
-    </div>
-
-    <div class="job-card">
-
-        <h2>XYZ Solutions</h2>
-
-        <p>
-            <strong>Job Role:</strong>
-            Graduate Engineer Trainee
-        </p>
-
-        <p>
-            <strong>Eligibility:</strong>
-            B.E / B.Tech with minimum 65%
-        </p>
-
-        <p>
-            <strong>Salary:</strong>
-            ₹5 LPA
-        </p>
-
-        <p>
-            <strong>Application Deadline:</strong>
-            30 October 2026
-        </p>
-
-        <a href="#" class="apply-btn">
-            Apply Now
-        </a>
-
-    </div>
-
-    <div class="contact">
-
-        <h2>Placement Contact Information</h2>
-
-        <p>
-            Email: placement@vit.ac.in
-        </p>
-
-        <p>
-            Phone: +91 XXXXX XXXXX
-        </p>
-
-        <p>
-            Placement Office: Training and Placement Department
-        </p>
-
-    </div>
-
-</div>
 
 </body>
 
